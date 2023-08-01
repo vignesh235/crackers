@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static Color primaryColor = const Color(0xff232323);
-  static Color scaffoldBackgroundColor = const Color(0xFFff8000);
+  static Color scaffoldBackgroundColor = const Color(0xFFfcfffd);
+  static Color textcolour = const Color(0xff53b467);
 }
 
 abstract class ThemeText {
@@ -26,3 +27,8 @@ abstract class ThemeText {
       height: 0.5,
       fontWeight: FontWeight.w600);
 }
+
+double finaltotalamount_ = 0.0;
+int totalqty_ = 1;
+List customerList = [];
+TextEditingController customercontroller = TextEditingController();

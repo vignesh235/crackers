@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.poppinsTextTheme(
             Theme.of(context).textTheme,
           ),
-          primarySwatch: createMaterialColor(const Color(0xff232323)),
-          scaffoldBackgroundColor: (const Color(0xff232323))),
+          primarySwatch: createMaterialColor(const Color(0xff53b467)),
+          scaffoldBackgroundColor: (const Color(0xfffcfffd))),
       home: const Homepage(),
       debugShowCheckedModeBanner: false,
     );

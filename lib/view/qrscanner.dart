@@ -1,9 +1,6 @@
-import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
@@ -110,11 +107,12 @@ class _qrState extends State<qr> {
           setState(() {
             itemlist_ = result!.code.toString();
           });
+          controller.pauseCamera();
 
           print(itemlist_);
-          itemlist.add(itemlist_);
           Get.toNamed('/Homepage');
-          controller.pauseCamera();
+
+          itemlist.add(itemlist_);
         }
       });
     });
